@@ -54,13 +54,14 @@ for k in range(1, nz+1):
 
 #################### Task 5 ############################
     # Print overall counts
+
+# Print 'active'
 all_blocks = n_active + n_inactive
 n_active_percent = (n_active/all_blocks) * 100
 round_n_active_percent = round(n_active_percent, 2)
 print(f'The percentage of the active blocks in the entire reservoir is {round_n_active_percent}')
 
-# Print 'active'
-print(f'The percentage of the active blocks in the entire reservoir is {round_n_active_percent}')
-
 # Print 'inactive'
-print(f'The percentage of the inactive blocks in the entire reservoir is {round_n_inactive_percent}')
+n_inactive_percent = (n_inactive/all_blocks) * 100
+round_n_inactive_percent = round(n_inactive_percent, 2)
+print(f'The percentage of the active blocks in the entire reservoir is {round_n_inactive_percent}')
